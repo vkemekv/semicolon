@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semicolon</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="fast.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+  </head>
+  <body>
+    <div id="wrap">
+    <div id="side-bar" class="ViWidthL">
+      <div class="logo">
+        <a href="https://semicolon-schoolclub.com/">
+          semicolon<span style="color:rgb(254, 136, 89)">;</span>
+        </a>
+      </div>
+      <div class="nav">
+      <ul>
+        <li>
+          <a href="about-data.html" class="nav_color">- 데이터 분석이란?</a>
+        </li>
+        <li>
+          <a href="python.html" class="nav_color">- 파이썬</a>
+        </li>
+        <li>
+          <a href="data-site.html" class="nav_color">- 데이터 수집 사이트</a>
+        </li>
+        <li>
+          <a href="code.html" class="nav_color">- 데이터 분석 코드</a>
+        </li>
+        <li>
+          <a href="preprocessing.html" class="nav_color">- 데이터 전처리</a>
+        </li>
+        <li>
+          <a href="fast.html" class="nav_color" style="color:orange;">- 빠른 진행</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    <div class="ViWidthS">
+      <div class="logo">
+        <a href="https://semicolon-schoolclub.com/">
+          semicolon<span style="color:rgb(254, 136, 89)">;</span>
+        </a>
+      </div>
+      <input type="checkbox" id="expand-menu" name="expand-menu" style="display: none;" onclick='is_checked()'>
+      <label for="expand-menu" class="menu-label"><span style="font-size: 2.5rem;"class="close material-symbols-outlined">menu</span></label>
+      <div class="a">
+      <div class="menu">
+        <label for="expand-menu"class="close"><span style="font-size: 2.5rem;" class="material-symbols-outlined">close</span></label>
+        <ul>
+          <li>
+            <a href="about-data.html" class="nav_color menu_1">- 데이터 분석이란?</a>
+          </li>
+          <li>
+            <a href="python.html" class="nav_color">- 파이썬</a>
+          </li>
+          <li>
+            <a href="data-site.html" class="nav_color">- 데이터 수집 사이트</a>
+          </li>
+          <li>
+            <a href="code.html" class="nav_color">- 데이터 분석 코드</a>
+          </li>
+          <li>
+            <a href="preprocessing.html" class="nav_color">- 데이터 전처리</a>
+          </li>
+          <li>
+            <a href="fast.html" style="color:rgb(0, 178, 249);" class="nav_color">- 빠른 진행</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <script>
+      function is_checked() {
+        const checkbox = document.getElementById('expand-menu');
+        if(checkbox.checked==true){
+          document.querySelector('.a').style.display ="block";
+          document.querySelector('.material-symbols-outlined').style.display ="none";
+        }
+        else if(checkbox.checked==false){
+          document.querySelector('.a').style.display ="none";
+          document.querySelector('.material-symbols-outlined').style.display ="block";
+        }
+      } 
+      </script>
+    </div>
+    </div>
+    <div id="contents">
+    <div class="content-inner">
+  <div>
+    <h1>빠른 진행</h1>
+    <h2>1. 주제 혹은 문제상황 찾기(진로랑 관련된)</h2>
+    <h2>2. 데이터 찾기</h2>
+    <h3>- 데이터 수집 사이트에서 주제와 맞는 데이터셋(자료)를 찾기</h3>
+    <h3>- 다운받고 구글 드라이브에 저장하기</h3>
+    <h2>3. 전처리하기</h2>
+    <h3>- 저장할 때 파일 형식을 csv로 저장</h3>
+    <h2>4. 데이터의 형식에 맞는 그래프 형태 찾기</h2>
+    <a href="https://matplotlib.org/stable/plot_types/index.html" target="_blank" rel="noopener noreferrer">
+    <img src="image/matplotlib.png"></a>
+  </div>
+  <!------------------------------------------------------------------->
+<h2>5. 그래프 그리기</h2>
+
+    <!------------------------------------------------------>
+    <h2>6. 탐구보고서 작성</h2>
+    </div>
+    </div>
+    <div class="bottom"></div>
+  </body>
+</html>

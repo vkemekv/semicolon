@@ -1,0 +1,63 @@
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,pre {
+  word-break: keep-all;}
+.content-inner{
+  text-align: center;
+}
+.extra{
+  font-size: 13px;
+  margin-left: 1rem;
+  color:rgb(73, 73, 73)
+}
+h4{
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+}
+@media screen and (min-width: 960px) {
+  p{
+    font-size: 21px;
+  }
+  .a-1{
+    margin-bottom:4rem;
+  }
+  img{
+    width: 500px;
+  }
+  .a-2{
+    margin-top: 5rem;
+  }
+  .process{
+    margin-top: 3rem;
+    margin-left: 4rem;
+    text-align: left;
+  }
+  h4{
+    font-size: 20px;
+  }
+  .explain{
+    font-size: 17px;
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 959px) {
+  h1{
+    font-size: clamp(20px, 4vw, 30px);
+  }
+  img{
+    min-width: 200px;
+    width: 60vw;
+  }
+  h4{
+    font-size: clamp(15px, 3vw, 20px);
+  }
+  p{
+    font-size: clamp(12px, 3vw, 20px);
+  }
+  .a-1{
+    margin-bottom:clamp(13px, 5vw, 4rem)
+  }
+  .explain{
+    font-size: clamp(12px, 3vw, 17px);
+    margin-left: 1rem; 
+  }
+}

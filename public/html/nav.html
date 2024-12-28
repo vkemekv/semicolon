@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semicolon</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div id="wrap">
+    <div id="side-bar" class="ViWidthL">
+      <div class="logo">
+        <a href="https://semicolon-schoolclub.com/">
+          semicolon<span style="color:rgb(254, 136, 89)">;</span>
+        </a>
+      </div>
+      <div class="nav">
+      <ul>
+        <li>
+          <a href="about-data.html" class="nav_color">- 데이터 분석이란?</a>
+        </li>
+        <li>
+          <a href="python.html" class="nav_color">- 파이썬</a>
+        </li>
+        <li>
+          <a href="data-site.html" class="nav_color">- 데이터 수집 사이트</a>
+        </li>
+        <li>
+          <a href="code.html" class="nav_color" style="color:orange;">- 데이터 분석 코드</a>
+        </li>
+        <li>
+          <a href="preprocessing.html" class="nav_color">- 데이터 전처리</a>
+        </li>
+        <li>
+          <a href="fast.html" class="nav_color">- 빠른 진행</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    <div class="ViWidthS">
+      <div class="logo">
+        <a href="https://semicolon-schoolclub.com/">
+          semicolon<span style="color:rgb(254, 136, 89)">;</span>
+        </a>
+      </div>
+    <input type="checkbox" id="expand-menu" style="display: none;" onclick="toggleMenu()">
+    <label for="expand-menu" class="menu-label">
+        <span style="font-size: 2.5rem;" class="material-symbols-outlined">menu</span>
+    </label>
+    <div class="a">
+        <div class="menu">
+            <label for="expand-menu" class="close">
+                <span style="font-size: 2.5rem;" class="material-symbols-outlined">close</span>
+            </label>
+            <ul>
+                <li><a href="about-data.html" class="nav_color menu_1">- 데이터 분석이란?</a></li>
+                <li><a href="python.html" class="nav_color">- 파이썬</a></li>
+                <li><a href="data-site.html" class="nav_color">- 데이터 수집 사이트</a></li>
+                <li><a href="code.html" class="nav_color" style="color:rgb(0, 178, 249);">- 데이터 분석 코드</a></li>
+                <li><a href="preprocessing.html" class="nav_color">- 데이터 전처리</a></li>
+                <li><a href="fast.html" class="nav_color">- 빠른 진행</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            const checkbox = document.getElementById('expand-menu');
+            const menu = document.querySelector('.a');
+        
+            if (checkbox.checked) {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }        
+    </script>
+    </div>
+    </div>
+</body>
+</html>

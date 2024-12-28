@@ -80,6 +80,19 @@ a {
     position: fixed;
     right:0;
   }
+  #expand-menu:checked ~ .a {
+    display: block;
+}
+
+/* 체크박스가 체크되지 않은 상태에서 기본 메뉴 아이콘 */
+  .menu-label .material-symbols-outlined {
+    display: inline;
+}
+
+/* 체크박스가 체크된 상태에서 메뉴 아이콘 숨김 */
+  #expand-menu:checked + .menu-label .material-symbols-outlined {
+    display: none;
+}
   .nav{
     margin-top: 3rem;
     padding: 10px;
